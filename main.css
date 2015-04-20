@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Garamond';
 }
 
 header {
@@ -13,15 +14,14 @@ header {
 a {
   text-decoration:none;
   color:grey;
-  font-family:'Garamond';
 }
 
-p {
-  font-family:'Garamond';
+ul, ol {
+  list-style:none;
 }
+
 
 #logo {
-  font-family: 'Garamond';
   font-size: 2em;
   letter-spacing:.25em;
   text-align:center;
@@ -157,6 +157,10 @@ footer {
   font-family: 'Garamond';
 }
 
+#about_p {
+  margin:5%;
+}
+
 #test_image {
   align-self:center;
   width:50%;
@@ -168,6 +172,40 @@ footer {
   align-self:center;
 }
 
+#about_contact {
+  margin: 0 auto;
+  display:block;
+  width:50%;
+  margin-bottom:10%;
+}
+
+#about_contact h3 {
+  margin:0;
+}
+
+#contact_info a {
+  display:block;
+  background-repeat:no-repeat;
+  background-size:20px 20px;
+  padding: 0 0 0 30px;
+  margin: 10px;
+}
+
+#contact_info li.email a {
+  background-image: url('img/mail.png');
+}
+
+#contact_info li.github a {
+  background-image: url('img/github.png');
+}
+
+#contact_info li.treehouse a {
+  background-image: url('img/treehouse.png');
+}
+
+#contact_info li.insta a {
+  background-image: url('img/insta.png');
+}
 
 
 
@@ -409,6 +447,27 @@ button {
     align-self:center;
     margin:0 10px;
   }
+
+  #about_contact {
+  width:100%;
+  margin-bottom:5%;
+}
+
+#about_contact h3 {
+  margin:0 auto;
+  text-align: left;
+  padding-left:20%;
+}
+
+#contact_info {
+  margin:0 auto;
+  padding-left:20%;
+}
+
+#contact_info li {
+  display:inline-block;
+}
+
 
   /*NEWS***********************************/
   form {
