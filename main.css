@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Garamond';
 }
 
 header {
@@ -13,15 +14,14 @@ header {
 a {
   text-decoration:none;
   color:grey;
-  font-family:'Garamond';
 }
 
-p {
-  font-family:'Garamond';
+ul, ol {
+  list-style:none;
 }
+
 
 #logo {
-  font-family: 'Garamond';
   font-size: 2em;
   letter-spacing:.25em;
   text-align:center;
@@ -118,28 +118,31 @@ footer {
 **********************************************/
 
 #main_container {
-  display:flex;
-  width:100%;
-  height:600px;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  width: 100%;
+  height: 600px;
 }
 
 #under_construction {
   background-image: url('works/hopememorial.jpg');
-  background-size:cover;
-  width:100%;
-  margin:5px auto;
+  background-size: cover;
+  width: 100%;
+  margin: 5px auto;
   background-repeat: no-repeat;
-  padding:40% 0;
+  padding: 40% 0;
 
 }
 
 #construction_text {
   background: rgba(67, 74, 84, .3);
-  color:white;
-  padding:8px;
-  text-align:center;
-  font-family:'Garamond';
-  font-weight:normal;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-family: 'Garamond';
+  font-weight: normal;
 }
 
 
@@ -151,23 +154,67 @@ footer {
 
 #about_container {
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
   align-content: center;
-  flex-direction:column;
-  padding:20px 10px;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  padding: 20px 10px;
   font-family: 'Garamond';
 }
 
+#about_p {
+  margin: 5%;
+}
+
 #test_image {
-  align-self:center;
-  width:50%;
+  align-self: center;
+  -webkit-align-self: center;
+  width: 50%;
 }
 
 #profile_pic {
-  width:100%;
-  height:auto;
-  align-self:center;
+  width: 100%;
+  height: auto;
+  align-self: center;
+  -webkit-align-self: center;
 }
 
+#about_contact {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  margin-bottom: 10%;
+}
+
+#about_contact h3 {
+  margin: 0;
+}
+
+#contact_info a {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 10px;
+}
+
+#contact_info li.email a {
+  background-image: url('img/mail.png');
+}
+
+#contact_info li.github a {
+  background-image: url('img/github.png');
+}
+
+#contact_info li.treehouse a {
+  background-image: url('img/treehouse.png');
+}
+
+#contact_info li.insta a {
+  background-image: url('img/insta.png');
+}
 
 
 
@@ -177,53 +224,57 @@ footer {
 ********************************************/
 
 #cover_container {
-  margin-top:10px;
-  padding:10px;
-  display:flex;
-  flex-direction:column;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  flex-direction: column;
+  -webkit-flex-direction: column;
 
 }
 
 #notice {
-  display:block;
-  width:100%;
+  display: block;
+  width: 100%;
   padding: 0 15%;
 }
 
 #art_wrapper {
-  margin:0 auto;
-  height:200px;
+  margin: 0 auto;
+  height: 200px;
   background-image: url('works/art_cover.jpg');
-  background-size:cover;
-  background-repeat:no-repeat;
-  transition-duration:.5s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-duration: .5s;
   
 }
 
 #web_wrapper{
- margin:0 auto;
- height:200px;
+ margin: 0 auto;
+ height: 200px;
  background-image: url('works/web_cover.png');
- background-size:cover;
- background-repeat:no-repeat;
- transition-duration:.5s;
+ background-size: cover;
+ background-repeat: no-repeat;
+ transition-duration: .5s;
 }
 
 #web_wrapper h1, #art_wrapper h1 {
-  line-height:170px;
-  font-weight:normal;
-  text-align:center;
-  color:white;
-  vertical-align:middle;
-  transition-duration:1s;
+  line-height: 170px;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  transition-duration: 1s;
 }
 
 #web_wrapper h1:hover, #art_wrapper h1:hover {
-  transform:scale(1.25);
+  transform: scale(1.25);
 }
 
 #web_wrapper:hover, #art_wrapper:hover {
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 
@@ -235,39 +286,39 @@ footer {
 **********************************************/
 
 #login_wrapper.admin {
-  display:none;
+  display: none;
 }
 
 #post_wrapper {
-  display:none;
+  display: none;
 }
 
 #post_wrapper.admin {
-  display:block;
+  display: block;
 }
 
 #blog {
-  display:block;
+  display: block;
 }
 
 
 .blogpost {
-  background-color:white;
-  color:grey;
+  background-color: white;
+  color: grey;
   font-family: 'Garamond';
   padding: 10px 20px;
   margin-bottom: 20px;
   border-top: 1px solid grey;
 }
 .blogpost h1 {
-  color:grey;
-  font-weight:normal;
-  width:100%;
-  padding:10px;
+  color: grey;
+  font-weight: normal;
+  width: 100%;
+  padding: 10px;
   font-family: 'Garamond';
 }
 .date {
-  font-weight:bold;
+  font-weight: bold;
 }
 
 /**********************************************
@@ -275,30 +326,30 @@ footer {
 **********************************************/
 
 form {
-  max-width:100%;
+  max-width: 100%;
   margin: 10px auto;
-  padding:2em;
+  padding: 2em;
   background: #f4f7f8;
   border-radius: 8px;
 }
 input, textarea, select {
   background: rgba(255, 255, 255, 0.1);
-  border:none;
-  font-size:16px;
-  height:auto;
+  border: none;
+  font-size: 16px;
+  height: auto;
   margin: 0 auto;
   outline: 0;
-  width:100%;
+  width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
 }
 
 fieldset {
-  border:none;
+  border: none;
 }
 
 label {
-  display:block;
+  display: block;
   font-family: 'Garamond';
 }
 
@@ -308,11 +359,11 @@ legend {
 }
 
 button {
-  display:block;
-  margin-top:10px;
+  display: block;
+  margin-top: 10px;
   font-family:'Garamond';
   font-size: 18px;
-  text-align:center;
+  text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
@@ -327,26 +378,32 @@ button {
 *****************************************/
 
 .gallery {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  padding:10% 5%;
+  display: flex;
+  display: -mox-box;
+  display: -webkit-box;
+  display: ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+  padding: 10% 5%;
 }
 
 .image_div {
-  width:100%;
-  margin:2%;
+  width: 100%;
+  margin: 2%;
 }
 
 .image_div img {
-  margin:5% auto;
-  width:70%;
-  display:block;
+  margin: 5% auto;
+  width: 70%;
+  display: block;
 
 }
 
 .image_div p {
-  text-align:center;
+  text-align: center;
 }
 
 
@@ -360,78 +417,113 @@ button {
 
   /****INDEX ***********************************/
   #main_container {
-    height:700px;
+    height: 700px;
     padding: 5% 10%;
   }
   #under_construction {
-    padding:20% 0;
+    padding: 20% 0;
   }
  #construction_text{
-    padding:8px 10%;
+    padding: 8px 10%;
   }
 
   /****PORTFOLIO*******************************/
   #web_wrapper h1, #art_wrapper h1 {
-    line-height:250px;
+    line-height: 250px;
   }
 
   /*****ABOUT********************************/
   #about_container {
     display: flex;
+    display: -mox-box;
+    display: -webkit-box;
+    display: ms-flexbox;
+    display: -webkit-flex;
     align-content: center;
-    flex-direction:row;
-    padding:5%;
+    -webkit-align-content:center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding: 5%;
     font-family: 'Garamond';
-    flex-wrap:wrap;
   }
 
   #about_container > p {
-    clear:both;
-    display:block;
-    text-align:center;
-    width:100%;
+    clear: both;
+    display: block;
+    text-align: center;
+    width: 100%;
   }
 
   #test_image {
-    align-self:center;
-    width:40%;
+    align-self: center;
+    -webkit-align-self: center;
+    width: 40%;
     margin: 0 10px;
   }
 
   #profile_pic {
-    width:100%;
-    height:auto;
-    align-self:center;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    -webkit-align-self: center;
   }
 
   #about_p {
-    width:50%;
-    align-self:center;
-    margin:0 10px;
+    width: 50%;
+    margin: 0 10px;
+    align-self: center;
+    -webkit-align-self: center;
   }
+
+  #about_contact {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+#about_contact h3 {
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 20%;
+}
+
+#contact_info {
+  margin: 0 auto;
+  padding-left: 20%;
+}
+
+#contact_info li {
+  display: inline-block;
+}
+
 
   /*NEWS***********************************/
   form {
-    width:50%;
+    width: 50%;
   }
 
   /*GALLERIES*****************************/
 
   .gallery {
-    flex-direction:row;
-    justify-content:center;
-    flex-wrap:wrap;
-    padding:5% 2%;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding: 5% 2%;
   }
 
   .image_div {
-    width:46%;
-    margin:2%;
-    align-self:center;
+    width: 46%;
+    margin: 2%;
+    align-self: center;
+    -webkit-align-self: center;
   }
 
   .image_div img {
-    width:90%;
+    width: 90%;
   }
 
 
@@ -444,65 +536,83 @@ button {
 
   /**MAIN STYLES**************************/
   .menu_button {
-    display:none;
+    display: none;
   }
 
   header {
-    display:flex;
+    display: flex;
+    display: -mox-box;
+    display: -webkit-box;
+    display: ms-flexbox;
+    display: -webkit-flex;
     flex-direction: row;
-    justify-content:space-between;
+    -webkit-flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
   }
 
   #navigation ul {
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    display: -mox-box;
+    display: -webkit-box;
+    display: ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
     justify-content: flex-end;
+    -webkit-justify-content: flex-end;
   }
 
   #navigation ul li {
-    margin:0 10px;
+    margin: 0 10px;
   }
 
   #logo {
     order: -1;
-    margin-left:20px;
+    margin-left: 20px;
   }
 
   #logo a:hover {
-    letter-spacing:.25em;
+    letter-spacing: .25em;
   }
 
   #navigation li a {
-    border:none;
-    font-size:1.25em;
+    border: none;
+    font-size: 1.25em;
   }
 
   #navigation li a:hover {
-    color:black;
-    letter-spacing:.5em;
-    font-weight:bold;
+    color: black;
+    letter-spacing: .5em;
+    font-weight: bold;
   }
 
   /*PROJECTS**********************************/
 
   #cover_container {
-    margin:10px;
-    padding:10px;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    display: -mox-box;
+    display: -webkit-box;
+    display: ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: center;
+    -webkit-justify-content: center;
 
   }
 
   #art_wrapper {
-    margin:0 10px;
-    width:450px;
+    margin: 0 10px;
+    width: 450px;
     
   }
 
   #web_wrapper{
-   margin:0 10px;
-   width:450px;
+   margin: 0 10px;
+   width: 450px;
   }
 
 
