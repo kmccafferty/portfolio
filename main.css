@@ -146,6 +146,15 @@ footer {
   font-weight: normal;
 }
 
+#construction_text a {
+  color:white;
+  transition-duration:.5s;
+}
+
+#construction_text a:hover {
+  letter-spacing:2px;
+}
+
 
 
 
