@@ -22,7 +22,6 @@ var $overlay = $('<div id="overlay"></div>');
 var $image = $('<img>');
 var $caption = $('<p></p>');
 
-var $position = 
 
 $overlay.append($image);
 $overlay.append($caption);
