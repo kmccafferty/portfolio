@@ -15,6 +15,37 @@ $('.menu_button').click(function(){
     } //End if-else statement
 }); //End Nav Menu Toggle
   
+
+//Lightbox /////////////////////////////////////////
+
+var $overlay = $('<div id="overlay"></div>');
+var $image = $('<img>');
+var $caption = $('<p></p>');
+
+var $position = 
+
+$overlay.append($image);
+$overlay.append($caption);
+$('body').append($overlay);
+
+$('.image_div a').click(function(event){
+	event.preventDefault();
+	var imageLocation=$(this).attr('href');
+	$overlay.show();
+	var captionText =$(this).children('img').attr('alt');
+	$caption.text(captionText);
+
+	var imageSource = $(this).children('img').attr('src');
+	$image.attr('src', imageSource)
+
+	var $abc = $(this).offset();
+	$overlay.css({top: $abc.top});
+
+});
+
+$overlay.click(function(){
+	$(this).hide();
+});
   
   
 }); //End document.ready

@@ -19,8 +19,7 @@ function submittal(evt) {
   $('#post_date').val("");
 } //end submittal event
 
-var submit = document.getElementById('post_button');
-submit.onclick =submittal;
+$('#post_button').click(submittal);
 
 
 myData.on("value", function(snapshot){
