@@ -239,20 +239,13 @@ footer {
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;
   flex-direction: column;
   -webkit-flex-direction: column;
 
 }
 
-#notice {
-  display: block;
-  width: 100%;
-  padding: 0 15%;
-}
-
 #art_wrapper {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   height: 200px;
   background-image: url('works/art_cover.jpg');
   background-size: cover;
@@ -262,7 +255,7 @@ footer {
 }
 
 #web_wrapper{
- margin: 0 auto;
+ /*margin: 0 auto;*/
  height: 200px;
  background-image: url('works/web_cover.png');
  background-size: cover;
@@ -287,7 +280,11 @@ footer {
   opacity: 0.8;
 }
 
-
+#notice {
+  display: block;
+  width: 100%;
+  padding: 0 15%;
+}
 
 
 
