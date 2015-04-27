@@ -166,7 +166,6 @@ footer {
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;
   align-content: center;
   flex-direction: column;
   -webkit-flex-direction: column;
@@ -387,7 +386,6 @@ button {
 .gallery {
   display: flex;
   display: -mox-box;
-  display: -webkit-box;
   display: ms-flexbox;
   display: -webkit-flex;
   flex-direction: column;
@@ -464,7 +462,6 @@ button {
   #about_container {
     display: flex;
     display: -mox-box;
-    display: -webkit-box;
     display: ms-flexbox;
     display: -webkit-flex;
     align-content: center;
@@ -570,7 +567,6 @@ button {
   header {
     display: flex;
     display: -mox-box;
-    display: -webkit-box;
     display: ms-flexbox;
     display: -webkit-flex;
     flex-direction: row;
@@ -582,7 +578,6 @@ button {
   #navigation ul {
     display: flex;
     display: -mox-box;
-    display: -webkit-box;
     display: ms-flexbox;
     display: -webkit-flex;
     flex-direction: row;
@@ -622,7 +617,6 @@ button {
     padding: 10px;
     display: flex;
     display: -mox-box;
-    display: -webkit-box;
     display: ms-flexbox;
     display: -webkit-flex;
     flex-direction: row;
