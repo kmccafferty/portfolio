@@ -395,10 +395,22 @@ button {
   padding: 5%;
 }
 
-.image_div {
+.image_div { 
   width: 100%;
   margin: 2%;
 }
+
+#brogan {
+  height:100%;
+  width:100%;
+}
+
+iframe[src*="codepen.io"]{
+    data-height:100px;
+    -webkit-data-height:100px;
+  }
+
+
 
 .image_div img {
   margin: 5% auto;
@@ -551,9 +563,11 @@ button {
     width: 90%;
   }
 
+  .brogan {
+    width:75%;
+  }
 
 } /*end media query*/
-
 
 
 
@@ -635,6 +649,10 @@ button {
   #web_wrapper{
    margin: 0 10px;
    width: 450px;
+  }
+
+  #brogan{
+    width:75%;
   }
 
 
